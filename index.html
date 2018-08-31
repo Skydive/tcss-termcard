@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css"/>
+	<link rel="stylesheet" href="node_modules/paper-css/paper.css"/>
+
+	<meta charset="utf-8">
+	<title>TCSS Termcard 2018/19</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+		@page { size: "A4 landscape"; }
+
+		body {
+			font-family: 'EB Garamond', serif;
+		}
+		
+		.sheet {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.sheet.background {
+			background-image: url('static/img/background.jpg');
+			background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+		}
+
+		.sheet>.content {
+			flex-basis: 336.38px;
+
+			margin: 5mm;
+			padding: 3mm;
+		}
+		.sheet>.content.background {
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+
+		.title {
+			text-align: center;
+			font-size: 7.0mm;
+		}
+	</style>
+</head>
+
+<body class="A4 landscape">
+	<section class="sheet background">
+		<article class="content background">
+			<div style="display: flex; flex-direction: row;">
+				<img src="static/img/logo.png" style="height: 18mm;"></img>
+				<div class="title">TRINITY COLLEGE SCIENCE SOCIETY</div>
+			</div>
+			<div style="height: 50mm;">
+				Test test
+			</div>
+		</article>
+		<article class="content background">
+			<div>Trinity College Science Society</div>
+			<div style="height: 50mm;">
+				Test test
+			</div>
+		</article>
+		<article class="content background">
+			<div>Trinity College Science Society</div>
+			<div style="height: 50mm;">
+				Test test
+			</div>
+		</article>
+	</section>
+</body>
+
+</html>
