@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "gitolite@khalidaleem.com:tcss-termcard"
+    "url": "git@khalidaleem.com:tcss-termcard"
   },
   "author": "",
   "license": "ISC",

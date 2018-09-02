@@ -13,7 +13,7 @@
 		@page { size: "A4 landscape"; }
 
 		body {
-			font-family: 'EB Garamond', serif;
+			font-family: 'EB Garamond', sans-serif;
 		}
 		
 		.sheet {
@@ -34,24 +34,118 @@
 			margin: 5mm;
 			padding: 3mm;
 		}
+
 		.sheet>.content.background {
 			background-color: rgba(255, 255, 255, 0.8);
 		}
 
-		.title {
+
+		.page {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
 			text-align: center;
+		}
+
+		.page .header .title {
+			font-size: 9.4mm;
+		}
+		.page .large {
 			font-size: 7.0mm;
+		}
+		.page .medium {
+			font-size: 5.0mm;
+		}
+		.page .small {
+			font-size: 2.5mm;
+		}
+		.page .body {
+			flex-grow: 1;
+		}
+
+		.body.committee>div {
+			font-size: 6.0mm;
+
+			display:flex;
+			flex-direction:row;
+		}
+		.body.committee>div>div:first-child {
+			 flex-grow:1;
+			 text-align:left;
+		}
+		.body.committee>div>div:first-child:after {
+			 content: ':';
+		}
+		.body.committee>div>div:last-child {
+			flex-grow:1;
+			text-align:right;
 		}
 	</style>
 </head>
 
 <body class="A4 landscape">
 	<section class="sheet background">
-		<article class="content background">
-			<div style="display: flex; flex-direction: row;">
-				<img src="static/img/logo.png" style="height: 18mm;"></img>
-				<div class="title">TRINITY COLLEGE SCIENCE SOCIETY</div>
+		<article class="content background" style="text-align: center;">
+			<div class="page">
+				<div class="header">
+					<div class="title">TRINITY COLLEGE SCIENCE SOCIETY</div>
+				</div>
+				<div style="flex-grow: 1;">
+					<img src="static/img/logo.png" style="width: 80%;"></img>
+				</div>
+				<div class="footer">
+					<div class="medium">http://tcss.soc.srcf.net/</div>
+				</div>
 			</div>
+		</article>
+		<article class="content background">
+			<div class="page">
+				<div class="header">
+					<div class="large">COMMITTEE</div>
+				</div>
+				<div class="body committee">
+					<div><div>Co-president</div><div>Ruslan Kotlyarov</div></div>
+					<div><div>Co-president</div><div>Luke Kim</div></div>
+					<div><div>Treasurer</div><div>Oliver Benson</div></div>
+					<div><div>Press Secretary</div><div>Khalid Aleem</div></div>
+					<div><div>Technician</div><div>Timothy O'Neil</div></div>
+				</div>
+				<div class="header">
+					<div class="large">ABOUT</div>
+				</div>
+				<div class="body">
+					<div class="entry"><div>Co-president</div><div>Ruslan Kotlyarov</div></div>
+					<div class="entry"><div>Co-president</div><div>Luke Kim</div></div>
+					<div class="entry"><div>Treasurer</div><div>Oliver Benson</div></div>
+					<div class="entry"><div>Press Secretary</div><div>Khalid Aleem</div></div>
+					<div class="entry"><div>Technician</div><div>Timothy O'Neil</div></div>
+				</div>
+			</div>
+		</article>
+		<article class="content background">
+			<div class="page">
+				<div class="header">
+					<div class="large">LOCATION</div>
+				</div>
+				<div class="body">
+					<br>
+				</div>
+				<div class="header">
+					<div class="large">SPONSORS/FRIENDS</div>
+				</div>
+				<div class="body">
+					<br>
+				</div>
+				<div class="footer">
+					<div class="large">http://tcss.soc.srcf.net/</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="sheet background">
+		<article class="content background" style="text-align: center;">
+			<div class="title">TRINITY COLLEGE SCIENCE SOCIETY</div>
+			<img src="static/img/logo.png" style="width: 80%;"></img>
 			<div style="height: 50mm;">
 				Test test
 			</div>
