@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700');
+@page {
+	size: "A4 landscape"; 
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin: 0;
+}
+
+body {
+	font-family: 'EB Garamond', sans-serif;
+}
+
+.sheet {
+	display: flex;
+	flex-direction: row;
+}
+
+.sheet.background {
+	background-image: url('../static/img/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sheet>.content {
+	position: relative;
+	flex-basis: 33.333333333%;
+
+	border-right: 1px dashed grey;
+}
+.sheet>.content:last-child {
+	border-right: none;
+}
+
+.sheet>.content>.page {
+	padding: 3mm;
+	margin: 5mm;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+}
+
+.page>.content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	height: 100%;
+}
+
+.page .header .title {
+	font-size: 9.4mm;
+}
+.page .large {
+	font-size: 7.0mm;
+}
+.page .medium {
+	font-size: 5.0mm;
+}
+.page .small {
+	font-size: 2.5mm;
+}
+.page .body {
+	flex-grow: 1;
+}
+
+.body.committee>div {
+	font-size: 5.0mm;
+
+	display:flex;
+	flex-direction:row;
+}
+.body.committee>div>div:first-child {
+	 flex-grow:1;
+	 text-align:left;
+	 font-style: bold;
+}
+.body.committee>div>div:last-child {
+	flex-grow:1;
+	text-align:right;
+    font-style: oblique;
+}
+
+.ruslan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ruslan>.img {
+	width: 128px;
+	height: 128px;
+
+	border: 2px solid grey;
+	border-radius: 50%;
+	
+	background-image: url('../static/img/ruslan.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 15px 0;
+}
+.ruslan>.bio {
+	font-style: oblique;
+}
+.qr-url {
+	width: 64px;
+	height: 64px;
+
+	background-image: url('../static/img/qr_url.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 15px 0;
+}
+
+.speaker .date {
+	font-weight: 600;
+	font-size: 4.0mm;
+	text-align: center;
+}
+
+.speaker .meta {
+	display:flex;
+	flex-direction:row;
+	margin-top:2mm;
+}
+.speaker .meta .img {
+	width: 64px;
+	height: 64px;
+	margin-bottom: 10px;
+
+	border: 2px solid grey;
+	border-radius: 50%;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin: auto;
+}
+.speaker .meta>.info {
+	flex-grow:1;
+	text-align: justify;
+	font-size: 3.5mm;
+	padding-left: 2mm;
+}
+.speaker .title {
+	color: #E44;
+
+	font-weight: 500;
+	text-align: center;
+	font-size: 4.5mm;
+}
+.speaker .meta .author {
+	font-size: 3.5mm;
+}
+.speaker .meta .contact {
+	font-size: 3.5mm;
+	font-style: oblique;
+}

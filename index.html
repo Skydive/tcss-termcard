@@ -5,417 +5,264 @@
 	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css"/>
 	<link rel="stylesheet" href="node_modules/paper-css/paper.css"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="node_modules/jQuery/tmp/jquery.js"></script>
+	<link rel="stylesheet" href="css/style.css"></head>
+
 	<meta charset="utf-8">
 	<title>TCSS Termcard 2018/19</title>
-
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700');
-		@page {
-			size: "A4 landscape"; 
-			margin-left: 0px;
-			margin-right: 0px;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			margin: 0;
-		}
-
-		body {
-			font-family: 'EB Garamond', sans-serif;
-		}
-		
-		.sheet {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.sheet.background {
-			background-image: url('static/img/background.jpg');
-			background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-		}
-
-		.sheet>.content {
-			position: relative;
-			flex-basis: 33.333333333%;
-
-			border-right: 1px dashed grey;
-		}
-		.sheet>.content:last-child {
-			border-right: none;
-		}
-
-		.sheet>.content>.page {
-			padding: 3mm;
-			margin: 5mm;
-			background-color: rgba(255, 255, 255, 0.8);
-		}
-
-		.page {
-    		position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 0;
-    		right: 0;
-			height: auto;
-		}
-
-		.page>.content {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-
-			height: 100%;
-		}
-
-		.page .header .title {
-			font-size: 9.4mm;
-		}
-		.page .large {
-			font-size: 7.0mm;
-		}
-		.page .medium {
-			font-size: 5.0mm;
-		}
-		.page .small {
-			font-size: 2.5mm;
-		}
-		.page .body {
-			flex-grow: 1;
-		}
-
-		.body.committee>div {
-			font-size: 5.0mm;
-
-			display:flex;
-			flex-direction:row;
-		}
-		.body.committee>div>div:first-child {
-			 flex-grow:1;
-			 text-align:left;
-			 font-style: bold;
-		}
-		.body.committee>div>div:last-child {
-			flex-grow:1;
-			text-align:right;
-		    font-style: oblique;
-		}
-
-		.ruslan {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		.ruslan>.img {
-			width: 128px;
-			height: 128px;
-
-			border: 2px solid grey;
-			border-radius: 50%;
-			
-			background-image: url('static/img/ruslan.png');
-			background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		margin: 15px 0;
-		}
-		.ruslan>.bio {
-			font-style: oblique;
-		}
-		.qr-url {
-			width: 64px;
-			height: 64px;
-
-			background-image: url('static/img/qr_url.png');
-			background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		margin: 15px 0;
-		}
-
-		.speaker .date {
-			font-weight: 600;
-			font-size: 5.0mm;
-			text-align: center;
-		}
-		
-		.speaker .meta {
-			display:flex;
-			flex-direction:row;
-			margin-top:2mm;
-		}
-		.speaker .meta .img {
-			width: 64px;
-			height: 64px;
-			margin-bottom: 10px;
-
-			border: 2px solid grey;
-			border-radius: 50%;
-			
-			background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-
-    		margin: auto;
-		}
-		.speaker .meta>.info {
-			flex-grow:1;
-			text-align: justify;
-			font-size: 3.5mm;
-			padding-left: 4mm;
-		}
-		.speaker .title {
-			font-weight: 500;
-			text-align: center;
-			font-size: 4.5mm;
-		}
-		.speaker .meta .author {
-			font-size: 3.5mm;
-		}
-		.speaker .meta .contact {
-			font-size: 3.5mm;
-			font-style: oblique;
-		}
-		</style>
-	</head>
-
-	<body class="A4 landscape">
-		<section class="sheet background">
-			<article class="content">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-							<div class="title">ABOUT</div>
-						</div>
+</head>
+<body class="A4 landscape">
+	<section class="sheet background">
+		<article class="content">
+			<div class="page">
+				<div class="content">
+					<div class="header">
+						<div class="title">ABOUT</div>
+						<hr>
+					</div>
+					<div class="body" style="display:block;text-align:justify;">
+						Trinity College Science Society (TCSS) is a student-run organisation aiming to promote science among students of the University of Cambridge as well as the general public. We are one of the most active science societies in Cambridge, hosting weekly talks with distinguished speakers along with the annual internship event and symposium.<br><br>
+						Past speakers include Fields medal laureate Michael Atiyah, President of the Royal Society Venkataraman Ramakrishnan, and Nobel laureate Sir Paul Nurse.<br><br>
+						To keep our commitment to promote the discussion, understanding, and enjoyment of science, we will try our best to provide the connection between our audience and the speakers.<br><br>
+						All of the talk and refreshments are free with the generous support of Trinity College. Please come and enjoy the talks, ask questions, and make the most out of your experience! The committee will always be there to support you to get the most out of our events. <br><br>
+						We sincerely hope we can see all of you to join us in another year of scientific adventure!<br><br>
+						<span style="float:right;font-style:oblique">- The Science Society Committee</span>
 					</div>
 				</div>
-			</article>
-			<article class="content" style="background-color: white;">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-						</div>
-						<div class="body" style="position:relative;display:flex;flex-direction:column;align-items:center;">
-							<div style="top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;display:flex;flex-direction:column;align-items:center;">
-								<div class="qr-url"></div>
-								<div class="medium">http://tcss.soc.srcf.net/</div>
-								<br>
-								<div style="display:flex;flex-direction:column;justify-content:left;align-items:flex-start;">
-									<div style="display:flex;flex-direction:row;"><i class="fa fa-facebook-square" style="color:#4267b2;font-size:18px;"aria-hidden="true"></i>&nbsp;&nbsp;trinitycollegesciencesociety</div>
-									<div style="display:flex;flex-direction:row;"><i class="fa fa-envelope-o" style="font-size:18px;"aria-hidden="true"></i>&nbsp;&nbsp;tcsspresident@gmail.com</div>
-								</div>
-							</div>
-						</div>
-						<div class="footer friends">
-						</div>
+			</div>
+		</article>
+		<article class="content" style="background-color: white;">
+			<div class="page">
+				<div class="content">
+					<div class="header">
 					</div>
-				</div>
-			</article>
-			<article class="content">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-							<div class="title">TRINITY COLLEGE SCIENCE SOCIETY</div>
-						</div>
-						<div style="flex-grow: 1;">
-							<img src="static/img/logo.png" style="width: 80%;"></img>
-						</div>
-						<div class="footer">
+					<div class="body" style="position:relative;display:flex;flex-direction:column;align-items:center;">
+						<div style="top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;display:flex;flex-direction:column;align-items:center;">
+							<div class="qr-url"></div>
 							<div class="medium">http://tcss.soc.srcf.net/</div>
-						</div>
-					</div>
-				</div>
-			</article>
-		</section>
-		<section class="sheet background">
-			<article class="content">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-							<div class="large">TALKS</div>
-						</div>
-						<div class="body" style="display:block;text-align:left;">
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 11 October</div>
-								<div class="title">Communicating chemistry using infographics</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/brunning.jpg');"></div>
-										<div class="author">Andy Brunning</div>
-										<div class="contact">@compoundchem</div>
-									</div>
-									<div class="info">
-										<div class="bio">Andy Brunning is a chemistry educator based in Cambridge. Brunning runs <span style="font-weight:500;">Compound Interest</span>, a company specialising in creating infographics</div>
-										<div class="loc" style="margin-top:10px;">Trinity Old Combination Room - OCR</div>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 18 October</div>
-								<div class="title">Speech rhythm: a metaphor?</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/francis.png');"></div>
-										<div class="author" style="font-size: 2.9mm;">Professor Francis Nolan</div>
-										<div class="contact" style="font-size: 2.9mm;">Department of Phonetics</div>
-									</div>
-									<div class="info">
-										<div class="bio">A talk intending to reveal how languages differ in terms of 'rhythm' in a general sense and how we've tried to quantify this; a mention of how one matches words to music in different languages; and the possibility that speech is actually 'anti-rhythmic' in nature.</div>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 25 October</div>
-								<div class="title">The Huppert, or There and Back Again</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/huppert.jpg');"></div>
-										<div class="author" style="font-size: 2.9mm;">Julian Huppert</div>
-										<div class="contact" style="font-size: 2.9mm;">Former MP</div>
-									</div>
-									<div class="info">
-										<div class="bio">Julian Leon Huppert is a Liberal Democrat politician in the United Kingdom and former Member of Parliament for Cambridge from 2010 to 2015.</div>
-										<div class="loc" style="margin-top:10px;">Collaboration with Trinity College Politics Society</div>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 1 November</div>
-								<div class="title">Dangerous consequences of the decline of coral reefs</div>
-								<div class="meta">
-									<div style="min-width:84px;text-align:center;">
-										<div class="img" style="background-image:url('static/img/speakers/wallacea.png');"></div>
-										<div class="author" style="font-size: 2.9mm;">Operation Wallacea</div>
-										<div class="contact">opwall.com</div>
-									</div>
-									<div class="info">
-										<div class="bio">The value of coral reefs to human populations and the multiple threats that are currently operating to reduce reef health. How coral reef researchers and conservationists are trying to reverse the fate of these incredibly important and fragile ecosystems.</div>
-									</div>
-								</div>
+							<br>
+							<div style="display:flex;flex-direction:column;justify-content:left;align-items:flex-start;">
+								<div style="display:flex;flex-direction:row;"><i class="fa fa-facebook-square" style="color:#4267b2;font-size:18px;"aria-hidden="true"></i>&nbsp;&nbsp;trinitycollegesciencesociety</div>
+								<div style="display:flex;flex-direction:row;"><i class="fa fa-envelope-o" style="font-size:18px;"aria-hidden="true"></i>&nbsp;&nbsp;tcsspresident@gmail.com</div>
 							</div>
 						</div>
 					</div>
+					<div class="footer friends">
+					</div>
 				</div>
-			</article>
-			<article class="content">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-						</div>
-						<div class="body">
-							<hr style="margin-top:38px;">
-							
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 8 November</div>
-								<div class="title">Interacting with instabilities: Nonlinearity in structural engineering</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/francis.png');"></div>
-										<div class="author">Ahmed Wadee</div>
-										<div class="contact">Physics</div>
-									</div>
-									<div class="info">
-										<div class="bio">We shall discuss some recent research work concerning some practical structural engineering components that are vulnerable to complex behaviour where multiple instabilities may occur in a natural loading sequence. These works demonstrate that nonlinear mathematics provides key tools to make informed decisions about whether potential failure modes are catastrophic or where instabilities may even be exploited to enhance structural performance.</div>
-									</div>
+			</div>
+		</article>
+		<article class="content">
+			<div class="page">
+				<div class="content">
+					<div class="header">
+						<div class="tcss title">TRINITY COLLEGE SCIENCE SOCIETY</div>
+					</div>
+					<div style="flex-grow: 1;">
+						<img src="static/img/logo.png" style="width: 80%;"></img>
+						<div class="large">TERM CARD</div>
+						<div class="large">MICHAELMAS</div>
+					</div>
+					<div class="footer">
+						<div class="medium">http://tcss.soc.srcf.net/</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="sheet background">
+		<article class="content">
+			<div class="page">
+				<div class="content">
+					<div class="header">
+						<div class="large">TALKS</div>
+					</div>
+					<div class="body" style="display:block;text-align:left;">
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 11 October</div>
+							<div class="title">Communicating chemistry using infographics</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/brunning.jpg');"></div>
+									<div class="author" style="font-size:2.9mm;">Andy Brunning</div>
 								</div>
-							</div>
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 15 November</div>
-								<div class="title">Exoplanets and the quest for universal life</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/queloz.jpeg');"></div>
-									</div>
-									<div class="info">
-										<div class="bio"></div>
-										<div class="author">Didier Queloz</div>
-										<div class="loc" style="margin-top:10px;">Collaboration with Cambridge University Science Society</div>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="speaker">
-								<div class="date">Thursday 22 November</div>
-								<div class="title">Life and death in an old enzyme: the ATP synthase</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/walker.png');"></div>
-										<div class="author">John Walker</div>
+								<div class="info">
+									<div class="bio">Andy Brunning is a chemistry educator based in Cambridge. Brunning runs <span style="font-weight:500;">Compound Interest</span>, a company specialising in creating infographics.</div><br/>
+									<div class="contact" style="text-align:right;">@compoundchem</div>
 
-										<div class="contact">Molecular Biology</div>
-									</div>
-									<div class="info">
-										<div class="bio">Nobel Prize in Chemistry 1997<br>
-										Every day, the ATP synthases in the mitochondria in the cells in our bodies make about 60 kg of ATP to keep us alive. The ATP synthases consist of two rotary motors linked by a stator and a flexible rotor.</div>
-										<div class="loc" style="margin-top:10px;">Collaboration with Trinity College Politics Society</div>
-									</div>
+									<!-- <div class="loc" style="margin-top:10px;">Trinity Old Combination Room - OCR</div> -->
 								</div>
 							</div>
-							<hr>
-							<!-- <div class="speaker">
-								<div class="date">Thursday 28 November</div>
-								<div class="title">Unification and progress in modern theoretical physics</div>
-								<div class="meta">
-									<div style="width: 84px;">
-										<div class="img" style="background-image:url('static/img/speakers/huppert.jpg');"></div>
-										<div class="author">Professor Michael Green</div>
-										<div class="contact">DAMTP</div>
-									</div>
-									<div class="info">
-										<div class="bio"></div>
-									</div>
+						</div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 18 October</div>
+							<div class="title">Speech rhythm: a metaphor?</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/francis.png');"></div>
+									<div class="author" style="font-size: 2.9mm;">Professor Francis Nolan</div>
+									<div class="contact" style="font-size: 2.9mm;">Department of Phonetics</div>
 								</div>
-							</div> -->
+								<div class="info">
+									<div class="bio">A talk intending to reveal how languages differ in terms of 'rhythm' in a general sense and how we've tried to quantify this; a mention of how one matches words to music in different languages; and the possibility that speech is actually 'anti-rhythmic' in nature.</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 25 October</div>
+							<div class="title">The Huppert, or There and Back Again</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/huppert.jpg');"></div>
+									<div class="author" style="font-size: 2.9mm;">Julian Huppert</div>
+									<div class="contact" style="font-size: 2.9mm;">Former MP</div>
+								</div>
+								<div class="info">
+									<div class="bio">Julian Huppert is a former Liberal Democrat Member of Parliament for Cambridge from 2010 to 2015 and has a PhD in supramolecular chemistry.</div>
+									<div class="loc" style="margin-top:10px;">Collaboration with Trinity College Politics Society</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 1 November</div>
+							<div class="title">Dangerous consequences of the decline of coral reefs</div>
+							<div class="meta">
+								<div style="min-width: 72px;text-align:center;">
+									<div class="img" style="background-image:url('static/img/speakers/wallacea.png');"></div>
+									<div class="author" style="font-size: 2.9mm;">Operation Wallacea</div>
+									<div class="contact">opwall.com</div>
+								</div>
+								<div class="info">
+									<div class="bio">The value of coral reefs to human populations and the multiple threats that are currently operating to reduce reef health. How coral reef researchers and conservationists are trying to reverse the fate of these incredibly important and fragile ecosystems.</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</article>
-
-			<article class="content">
-				<div class="page">
-					<div class="content">
-						<div class="header">
-							<div class="large">PRESIDENT</div>
-							<div class="medium">Ruslan Kotlyarov</div>
-						</div>
-						<div class="body ruslan" style="text-align:center;">
-							<div class="img"></div>
-							<div class="bio">
-								"My goal as a president is to ensure you like the talks and learn something new and interesting from our speakers."
+			</div>
+		</article>
+		<article class="content">
+			<div class="page">
+				<div class="content">
+					<div class="header">
+					</div>
+					<div class="body">
+						<div class="speaker">
+							<div class="date">Thursday 8 November</div>
+							<div class="title">Interacting with instabilities: Nonlinearity in structural engineering</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/waddee.jpg');"></div>
+									<div class="author" style="font-size: 2.9mm;">Professor Ahmer Wadee</div>
+								</div>
+								<div class="info">
+									<div class="bio">
+									Structural engineering relies fundamentally on mathematics. We shall discuss some recent research work demonstrating that nonlinear mathematics provides key tools to make informed decisions about whether instabilities are catastrophic or may be exploited to enhance structural performance.</div>
+								</div>
 							</div>
 						</div>
-						<div class="header">
-							<div class="medium">COMMITTEE</div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 15 November</div>
+							<div class="title">Exoplanets and the quest for universal life</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/queloz.jpeg');"></div>
+									<div class="author" style="font-size: 2.9mm;"> Professor Didier Queloz</div>
+								</div>
+								<div class="info">
+									<div class="bio">
+										Besides the gas giants, current technology now allows us to discover Earth-like exoplanets, and for some of them, even the atmospheric properties are retrievable. Based on this early results, we will discuss on the possibilities of exoplanets to harbour life.
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="body committee">
-							<div><div>Vice-President</div><div>Luke Kim</div></div><br>
-							
-							<div><div>Senior Treasurer</div><div>Alan Weeds</div></div>
-							<div><div>Treasurer</div><div>Oliver Benson</div></div><br>
-
-							<div><div>Secretary</div><div>Siqi Fang</div></div>
-							<div><div>Publicity Officer</div><div>Khalid Aleem</div></div>
-							<div><div>Website Maintenance</div><div>Jiří Etrych</div></div><br>
-
-							<div><div>Events Officers</div><div>Filip Wronowski</div></div>
-							<div><div></div><div>Bogdan Zwierzynski</div></div><br>
-
-							<div><div>General Committee</div><div>Sophie Merchant</div></div>
-							<div><div></div><div>Charlene Tang</div></div>
-							<div><div></div><div>Josh Hampson</div></div>
-							<div><div></div><div>Salvador Buse</div></div>
-							<div><div></div><div>Hamish Trowell</div></div>
-							<div><div></div><div>Mark di Giovanni</div></div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 22 November</div>
+							<div class="title">Life and death in an old enzyme: the ATP synthase</div>
+							<div class="meta">
+								<div style="min-width: 72px;">
+									<div class="img" style="background-image:url('static/img/speakers/walker.png');"></div>
+									<div class="author" style="font-size: 2.9mm;">Professor John Walker</div>
+								</div>
+								<div class="info">
+									<div class="bio">
+									 While ATP synthases normally maintain a unique direction of rotation to synthesise ATP, the direction can be reversed as ATP is hydrolised. However, some eubacterial ATP synthases are unable to do this. Since the ATP synthase in Mycobacterium tuberculosis is a validated drug target, differences between human and pathogen ATP synthases can be exploited to cope antibiotic resistance.</div>						
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="speaker">
+							<div class="date">Thursday 29 November</div>
+							<div class="title">Unification and progress in modern theoretical physics</div>
+							<div class="meta">
+								<div style="width: 84px;">
+									<div class="img" style="background-image:url('static/img/speakers/green.jpg');"></div>
+									<div class="author" style="font-size: 2.9mm;">Professor Michael Green</div>
+								</div>
+								<div class="info">
+									<div class="bio">
+										The talk will be a non-technical overview of the evolution of Modern Physics, from Relativity and Quantum theory to QFT and String theory. These recent developments have potential applications to different areas of physics from what they were originally intended for.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</article>
-		</section>
-	</body>
+			</div>
+		</article>
+
+		<article class="content">
+			<div class="page">
+				<div class="content">
+					<div class="header">
+						<div class="title">PRESIDENT</div>
+						<hr>
+						<div class="medium">Ruslan Kotlyarov</div>
+					</div>
+					<div class="body ruslan" style="text-align:center;">
+						<div class="img"></div>
+						<div class="bio">
+							"My goal as a president is to ensure you like the talks and learn something new and interesting from our speakers."
+						</div>
+					</div>
+					<div class="header">
+						<div class="medium">COMMITTEE</div>
+					</div>
+					<div class="body committee">
+						<div><div>Vice-President</div><div>Luke Kim</div></div><br>
+						
+						<div><div>Senior Treasurer</div><div>Alan Weeds</div></div>
+						<div><div>Treasurer</div><div>Oliver Benson</div></div><br>
+
+						<div><div>Secretary</div><div>Siqi Fang</div></div>
+						<div><div>Publicity Officer</div><div>Khalid Aleem</div></div>
+						<div><div>Website Maintenance</div><div>Jiří Etrych</div></div><br>
+
+						<div><div>Events Officers</div><div>Filip Wronowski</div></div>
+						<div><div></div><div>Bogdan Zwierzynski</div></div><br>
+
+						<div><div>General Committee</div><div>Sophie Merchant</div></div>
+						<div><div></div><div>Charlene Tang</div></div>
+						<div><div></div><div>Josh Hampson</div></div>
+						<div><div></div><div>Salvador Buse</div></div>
+						<div><div></div><div>Hamish Trowell</div></div>
+						<div><div></div><div>Mark di Giovanni</div></div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+</body>
 </html>
+<script>
+	$(function() {
+		$(".tcss").each(function(k, v) {
+			$(v).html($(v).text().split(' ').map((x) => "<span style='color:red;'>"+x[0]+"</span>"+x.substr(1, x.length)).join(' '));
+		});
+	});
+</script>
